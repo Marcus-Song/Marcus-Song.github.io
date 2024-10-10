@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-half">
+            <div class="left-content">
+                <div class="left-content-top">
+                    <h1>Hi! My name is</h1>
+                    <div class="name">MARCUS</div>
+                    <p class="subtitle">I am a <strong class="highlight">Computer Science</strong> student at <strong class="highlight">University of Pittsburgh</strong></p>
+                    <a href="#" class="view-resume" id="view-resume-link">View Full Résumé →</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/Marcus-Song" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" id="email-icon"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-content">
+                <div class="section">
+                    <p>During the past few years, my main focus has been <strong class="highlight">Web Development</strong> and <strong class="highlight">Game Development</strong>. I started teaching myself <strong class="highlight">Unity Engine</strong> high school, and created a few Game Projects by myself... Now, I learn <strong class="highlight">Spring Boot</strong> during my internship and enhancing my skills in <strong class="highlight">full-stack development</strong>.</p>
+                    <p>Besides Coding, I love Music and Games (video games and board games)</p>
+                </div>
+                <div class="section">
+                    <h2 style="font-size: 2em;">My Projects</h2>
+                    <div class="project">
+                        <img src="Images/SecureBusiness.png" alt="Secure Business Management System">
+                        <div class="project-info">
+                            <h3>Secure Business Management System</h3>
+                            <p>A business style web page with registration, cell phone verification code, customer management, print and email billing, account security</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="Images/ocr.jpg" alt="OCR Backend Server">
+                        <div class="project-info">
+                            <h3>OCR Backend Server</h3>
+                            <p>A server tool responding to front-end OCR form analysis requests. Called Baidu's OCR recognition service interface, and analyzed the rows and columns to adjust the null value in the form of Json transmitted to the back-end server</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="Images/CardGame.png" alt="Unity Online Card Game">
+                        <div class="project-info">
+                            <h3>Unity Online Card Game</h3>
+                            <p>An online card game similar to Hearthstone with matchmaking, card inventory, constructed sets, and multi-player battles.The multiplayer functionality is based on Colyseus, which allows players to enter queues and match up with other opponents. </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Unity Engine</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Colyseus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="Images/PhotoEditor.png" alt="Python Photo Editor">
+                        <div class="project-info">
+                            <h3>Python Photo Editor</h3>
+                            <p>A python based photo editing tool. It allows for some basic photo editing functions</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -29,3 +29,40 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.removeChild(link);
     });
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const greetingElement = document.getElementById('greeting');
+    const nameElement = document.getElementById('name');
+    const subtitleElement = document.getElementById('subtitle');
+
+    const greeting = "Hi! My name is";
+    const name = "MARCUS";
+    const subtitle = "I am a <strong class='highlight'>Computer Science</strong> student at <strong class='highlight'>University of Pittsburgh</strong>";
+
+    // 立即开始打字 greeting
+    typeWriter(greetingElement, greeting, 0, 50);
+
+    // 在 greeting 完成后开始打字 name
+    setTimeout(() => {
+        typeWriter(nameElement, name, 0, 100);
+    }, greeting.length * 50 + 500);
+
+    // 在 name 完成后开始打字 subtitle
+    setTimeout(() => {
+        typeWriter(subtitleElement, subtitle, 0, 50);
+    }, (greeting.length + name.length) * 50 + 1000);
+});
+
+function typeWriter(element, text, i, speed) {
+    if (i < text.length) {
+        if (text.substr(i, 7) === '<strong') {
+            let endIndex = text.indexOf('</strong>', i) + 9;
+            element.innerHTML += text.substring(i, endIndex);
+            i = endIndex;
+        } else {
+            element.innerHTML += text.charAt(i);
+            i++;
+        }
+        setTimeout(() => typeWriter(element, text, i, speed), speed);
+    }
+}

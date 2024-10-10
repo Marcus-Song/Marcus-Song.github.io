@@ -78,8 +78,8 @@ h1 {
     color: #c2c2c2;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
-    transition: color 0.3s ease; /* 添加颜色过渡效果 */
+    margin-top: 30px;
+    transition: color 0.3s ease; 
 }
 
 .view-resume:hover {
@@ -89,7 +89,7 @@ h1 {
 .social-icons {
     margin-top: auto;
     padding-top: 400px;
-    transition: color 0.3s ease; /* 添加颜色过渡效果 */
+    transition: color 0.3s ease; 
 }
 
 .social-icons a {
@@ -97,7 +97,7 @@ h1 {
     font-size: 24px;
     margin-right: 20px;
     text-decoration: none;
-    transition: color 0.3s ease; /* 添加颜色过渡效果 */
+    transition: color 0.3s ease; 
 }
 
 .social-icons a:hover {
@@ -173,7 +173,7 @@ p {
 /* 将所有粗体文本设置为白色 */
 strong.highlight {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700; /* 粗体效果 */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
@@ -213,4 +213,36 @@ body::-webkit-scrollbar, .right-half::-webkit-scrollbar {
     width: 0;
     height: 0;
     display: none;
+}
+
+#greeting, #name, #subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: normal;
+}
+
+#greeting {
+    animation: typing 2s steps(20, end) forwards;
+    width: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#name {
+    animation: typing 1.5s steps(6, end) 2s forwards;
+    width: 0;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    animation: typing 4s steps(70, end) 3.5s forwards;
+    width: 0;
+    margin-bottom: 30px;
+}
+
+/* 打字动画 */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
